@@ -1,0 +1,6 @@
+.env
+.venv
+.mypycache
+__pycache__
+.mypy_cache
+chroma_db
