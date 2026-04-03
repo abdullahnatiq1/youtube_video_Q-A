@@ -16,8 +16,9 @@ def getVideoId(url):
 
 
 def fetchTranscript(videoId):
-    transcript = YouTubeTranscriptApi.get_transcript(videoId)
-    return " ".join([entry["text"] for entry in transcript])
+    ytt = YouTubeTranscriptApi()
+    transcript = ytt.fetch(videoId)
+    return " ".join([entry.text for entry in transcript])
 
 
 def chunkText(text, maxWords=150, overlapSentences=1):

@@ -40,8 +40,9 @@ def selfRagRetrieve(query):
 
 def selfRagVerify(answer, context):
     if isAnswerRelevant(answer, context):
-        print("Answer is Relevant")
+        print("\nAnswer is Relevant")
     else:
         print("Answer is Irrelevant")
+
 
 
